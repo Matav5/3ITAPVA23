@@ -1,0 +1,17 @@
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\bin\Debug\net6.0-windows\3ITAPokladVeSlozce.exe
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\bin\Debug\net6.0-windows\3ITAPokladVeSlozce.deps.json
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\bin\Debug\net6.0-windows\3ITAPokladVeSlozce.runtimeconfig.json
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\bin\Debug\net6.0-windows\3ITAPokladVeSlozce.dll
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\bin\Debug\net6.0-windows\3ITAPokladVeSlozce.pdb
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\_3ITAPokladVeSlozce.Form1.resources
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.csproj.GenerateResource.cache
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.AssemblyInfoInputs.cache
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.AssemblyInfo.cs
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.dll
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\refint\3ITAPokladVeSlozce.dll
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.pdb
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\3ITAPokladVeSlozce.genruntimeconfig.cache
+C:\Users\Matav\source\repos\3ITAPokladVeSlozce\3ITAPokladVeSlozce\obj\Debug\net6.0-windows\ref\3ITAPokladVeSlozce.dll

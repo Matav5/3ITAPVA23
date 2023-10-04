@@ -1,0 +1,13 @@
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\bin\Debug\3ITACtverecky.exe.config
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\bin\Debug\3ITACtverecky.exe
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\bin\Debug\3ITACtverecky.pdb
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.csproj.SuggestedBindingRedirects.cache
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\_3ITACtverecky.Ctverecek.resources
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\_3ITACtverecky.Form1.resources
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\_3ITACtverecky.Properties.Resources.resources
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.csproj.GenerateResource.cache
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.exe
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\3ITACtverecky.pdb
+C:\Users\Matav\source\repos\3ITACtverecky\3ITACtverecky\obj\Debug\_3ITACtverecky.VtipnyCtverecek.resources

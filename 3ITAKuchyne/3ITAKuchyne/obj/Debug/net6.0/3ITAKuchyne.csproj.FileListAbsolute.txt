@@ -1,0 +1,15 @@
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\bin\Debug\net6.0\3ITAKuchyne.exe
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\bin\Debug\net6.0\3ITAKuchyne.deps.json
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\bin\Debug\net6.0\3ITAKuchyne.runtimeconfig.json
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\bin\Debug\net6.0\3ITAKuchyne.dll
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\bin\Debug\net6.0\3ITAKuchyne.pdb
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.AssemblyInfoInputs.cache
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.AssemblyInfo.cs
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.dll
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\refint\3ITAKuchyne.dll
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.pdb
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\3ITAKuchyne.genruntimeconfig.cache
+C:\Users\Matav\source\repos\3ITAKuchyne\3ITAKuchyne\obj\Debug\net6.0\ref\3ITAKuchyne.dll

@@ -1,0 +1,17 @@
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\bin\Debug\net6.0-windows\3ITARestauraceOpak.exe
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\bin\Debug\net6.0-windows\3ITARestauraceOpak.deps.json
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\bin\Debug\net6.0-windows\3ITARestauraceOpak.runtimeconfig.json
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\bin\Debug\net6.0-windows\3ITARestauraceOpak.dll
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\bin\Debug\net6.0-windows\3ITARestauraceOpak.pdb
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.csproj.AssemblyReference.cache
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\_3ITARestauraceOpak.Form1.resources
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.csproj.GenerateResource.cache
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.AssemblyInfoInputs.cache
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.AssemblyInfo.cs
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.dll
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\refint\3ITARestauraceOpak.dll
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.pdb
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\3ITARestauraceOpak.genruntimeconfig.cache
+C:\Users\Matav\source\repos\3ITARestauraceOpak\3ITARestauraceOpak\obj\Debug\net6.0-windows\ref\3ITARestauraceOpak.dll
