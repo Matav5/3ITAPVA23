@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\Opak3ITA\\Opak3ITA\\Opak3ITA.csproj",
+      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\Opak3ITA\\Opak3ITA\\Opak3ITA.csproj",
       "projectName": "Opak3ITA",
-      "projectPath": "C:\\Users\\Matav\\source\\repos\\Opak3ITA\\Opak3ITA\\Opak3ITA.csproj",
+      "projectPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\Opak3ITA\\Opak3ITA\\Opak3ITA.csproj",
       "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matav\\source\\repos\\Opak3ITA\\Opak3ITA\\obj\\",
+      "outputPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\Opak3ITA\\Opak3ITA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",
