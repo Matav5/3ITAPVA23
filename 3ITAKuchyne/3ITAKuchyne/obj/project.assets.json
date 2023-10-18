@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\3ITAKuchyne\\3ITAKuchyne\\3ITAKuchyne.csproj",
+      "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAKuchyne\\3ITAKuchyne\\3ITAKuchyne.csproj",
       "projectName": "3ITAKuchyne",
-      "projectPath": "C:\\Users\\Matav\\source\\repos\\3ITAKuchyne\\3ITAKuchyne\\3ITAKuchyne.csproj",
+      "projectPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAKuchyne\\3ITAKuchyne\\3ITAKuchyne.csproj",
       "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matav\\source\\repos\\3ITAKuchyne\\3ITAKuchyne\\obj\\",
+      "outputPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAKuchyne\\3ITAKuchyne\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",
