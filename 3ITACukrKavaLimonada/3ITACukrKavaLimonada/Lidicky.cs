@@ -15,6 +15,11 @@ namespace _3ITACukrKavaLimonada
         private bool bezi;
         private float rychlost;
 
+        public bool Bezi => bezi;
+        public float X => x;
+        public float Y => y;
+        public Action<Lidicky> OnLidicekUmrel;
+        public Action<Lidicky> OnLidicekPrezil;
         public Lidicky(bool jeNazivu,int x, int y, float rychlost)
         {
             this.jeNazivu = jeNazivu;
@@ -24,7 +29,11 @@ namespace _3ITACukrKavaLimonada
         }
         public void Vykresli(Graphics g)
         {
-            if (jeNazivu)
+            if (jeVitez)
+            {
+                g.FillEllipse(Brushes.Lime, x, y, 10, 10);
+            }
+            else if (jeNazivu)
             {
                 g.FillEllipse(Brushes.Blue, x, y, 10, 10);
             }
@@ -35,8 +44,39 @@ namespace _3ITACukrKavaLimonada
         }
         public void Pohni()
         {
-            x += rychlost;
+            if(bezi)
+                x += rychlost;
         }
 
+        internal void OnSemaforZmenilBarvu(Semafor semafor)
+        {
+            if (Random.Shared.Next(101) <= 20)
+                return;
+
+            if (semafor.JeZeleny)
+            {
+                bezi = true;
+            }
+            else
+            {
+                bezi = false;
+            }
+        }
+
+        internal void Vyhral()
+        {
+            jeVitez = true;
+            bezi = false;
+            if (OnLidicekPrezil != null)
+                OnLidicekPrezil(this);
+        }
+
+        internal void Umri()
+        {
+            bezi = false;
+            if(OnLidicekUmrel != null)
+                OnLidicekUmrel(this);
+
+        }
     }
 }

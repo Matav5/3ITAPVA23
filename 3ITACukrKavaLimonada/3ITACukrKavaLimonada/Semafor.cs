@@ -30,7 +30,7 @@ namespace _3ITACukrKavaLimonada
             }
             else
             {
-                e.Graphics.FillEllipse(Brushes.Red, 0, 0, 100, 100);
+                e.Graphics.FillEllipse(Brushes.HotPink, 0, 0, 100, 100);
                 e.Graphics.FillEllipse(Brushes.Green, 100, 0, 100, 100);
             }
         }
