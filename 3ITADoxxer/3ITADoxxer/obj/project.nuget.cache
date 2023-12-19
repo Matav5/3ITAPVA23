@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JMAXg3V71SJAF5CjB/RR8weKiYLWfimTbDSYofLoeC+mr9jEA0N4xnD1msUiV8FRYorUWSL4tQIU+N3XubBKEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matav\\source\\repos\\3ITADoxxer\\3ITADoxxer\\3ITADoxxer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matav\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\Matav\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
+    "C:\\Users\\Matav\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
+    "C:\\Users\\Matav\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

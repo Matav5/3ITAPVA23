@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ITADoxxer", "3ITADoxxer\3ITADoxxer.csproj", "{7216018E-2D81-41F6-9FB2-811C5EEA67CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7216018E-2D81-41F6-9FB2-811C5EEA67CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7216018E-2D81-41F6-9FB2-811C5EEA67CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7216018E-2D81-41F6-9FB2-811C5EEA67CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7216018E-2D81-41F6-9FB2-811C5EEA67CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2214B9CE-FE7D-4955-8BE4-CF247DFEB8F3}
+	EndGlobalSection
+EndGlobal
