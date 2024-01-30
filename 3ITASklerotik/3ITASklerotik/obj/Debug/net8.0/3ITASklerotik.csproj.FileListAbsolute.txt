@@ -1,0 +1,14 @@
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\bin\Debug\net8.0\3ITASklerotik.exe
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\bin\Debug\net8.0\3ITASklerotik.deps.json
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\bin\Debug\net8.0\3ITASklerotik.runtimeconfig.json
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\bin\Debug\net8.0\3ITASklerotik.dll
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\bin\Debug\net8.0\3ITASklerotik.pdb
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.AssemblyInfoInputs.cache
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.AssemblyInfo.cs
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.csproj.CoreCompileInputs.cache
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.dll
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\refint\3ITASklerotik.dll
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.pdb
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\3ITASklerotik.genruntimeconfig.cache
+C:\Users\Matav\source\repos\3ITASklerotik\3ITASklerotik\obj\Debug\net8.0\ref\3ITASklerotik.dll
