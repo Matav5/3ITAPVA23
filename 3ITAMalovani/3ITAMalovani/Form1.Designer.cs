@@ -70,12 +70,14 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Black;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             pictureBox2.Location = new Point(391, 47);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(50, 50);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             pictureBox2.MouseClick += pictureBox2_MouseClick;
             // 
             // Form1

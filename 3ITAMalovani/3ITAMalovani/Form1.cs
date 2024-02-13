@@ -4,10 +4,7 @@ namespace _3ITAMalovani
     {
         List<Point> aktualniKresba = new List<Point>();
 
-        List<ICommand> seznamPrikazu = new List<ICommand>();
-
-        public int prikazIndex = -1;
-
+        CommandHistory commandHistory = new CommandHistory();
         public Form1()
         {
             InitializeComponent();
@@ -15,39 +12,31 @@ namespace _3ITAMalovani
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 aktualniKresba.Add(e.Location);
             }
             else
             {
-                if(aktualniKresba.Count > 0)
+                if (aktualniKresba.Count > 0)
                 {
                     // Vytvoøí se pøíkaz na kreslení
-                    DrawCommand drawCommand = new DrawCommand(pictureBox1.CreateGraphics(),pictureBox1,new List<Point>(aktualniKresba));
-                    
-                    // Pøerušení øetìzce
-                    if(seznamPrikazu.Count -1 != prikazIndex && seznamPrikazu.Count - 1 - prikazIndex > 0)
-                    {
-                        MessageBox.Show($"Poèet prvkù : {seznamPrikazu.Count - 1} ; \n Poèet prvkù k odebrání: {seznamPrikazu.Count - 1 - prikazIndex} ; \n Index: {prikazIndex}");
-                        seznamPrikazu.RemoveRange(prikazIndex +1, seznamPrikazu.Count - 1 - prikazIndex);
-                    }
-                    //Pøidání a spuštìní pøíkazu
-                    seznamPrikazu.Add(drawCommand);
-                    drawCommand.Execute();
-                    prikazIndex++;
+                    DrawCommand drawCommand = new DrawCommand(pictureBox1, new List<Point>(aktualniKresba), pictureBox2.BackColor);
+                    commandHistory.AddCommand(drawCommand);
                     aktualniKresba.Clear();
                 }
-            };  
+            };
             Refresh();
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             // Vykreslování rozdìlaného tahu
+            Pen pero = new Pen(pictureBox2.BackColor);
             for (int i = 0; i < aktualniKresba.Count; i++)
             {
-                e.Graphics.DrawRectangle(Pens.Black, aktualniKresba[i].X, aktualniKresba[i].Y, 1, 1);
+                
+                e.Graphics.DrawRectangle(pero , aktualniKresba[i].X, aktualniKresba[i].Y, 1, 1);
             }
         }
 
@@ -59,20 +48,25 @@ namespace _3ITAMalovani
         private void button1_Click(object sender, EventArgs e)
         {
             //Ctrl-Z => návrat do pùvodního stavu
-            if (prikazIndex == -1 || seznamPrikazu.Count == 0)
-                return;
-            seznamPrikazu[prikazIndex].Undo();
-            prikazIndex--;
+            commandHistory.Undo();
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //CTRL-Y => návrat do aktuálnìjšího stavu
-            if (prikazIndex >= seznamPrikazu.Count-1)
-                return;
-            prikazIndex++;
-            seznamPrikazu[prikazIndex].Execute();
+            commandHistory.Next();
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                ChangeColorCommand changeColorCommand = new ChangeColorCommand(pictureBox2,
+                    colorDialog1.Color);
+                commandHistory.AddCommand(changeColorCommand);
+            }
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matav\\source\\repos\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj": {}
+    "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matav\\source\\repos\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj": {
+    "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj",
+        "projectUniqueName": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj",
         "projectName": "3ITAMalovani",
-        "projectPath": "C:\\Users\\Matav\\source\\repos\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj",
+        "projectPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAMalovani\\3ITAMalovani\\3ITAMalovani.csproj",
         "packagesPath": "C:\\Users\\Matav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matav\\source\\repos\\3ITAMalovani\\3ITAMalovani\\obj\\",
+        "outputPath": "C:\\Users\\Matav\\source\\repos\\3ITAPVA23\\3ITAMalovani\\3ITAMalovani\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matav\\AppData\\Roaming\\NuGet\\NuGet.Config",

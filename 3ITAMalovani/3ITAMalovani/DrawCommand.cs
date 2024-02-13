@@ -15,7 +15,7 @@ namespace _3ITAMalovani
         List<Point> cestaKurzoru = new List<Point>();
         PictureBox pictureBox;
 
-        public DrawCommand(Graphics g, PictureBox pictureBox, List<Point> cestaKurzoru)
+        public DrawCommand(PictureBox pictureBox, List<Point> cestaKurzoru, Color barvicka)
         {
             this.pictureBox = pictureBox;
          
@@ -27,10 +27,12 @@ namespace _3ITAMalovani
             //Vytvoří se NOVÝ obrázek toho co je v pozadí PictureBoxu
             this.newbitmap = (Bitmap)oldbitmap.Clone();
             var actualG = Graphics.FromImage(newbitmap);
+
+            Pen pero = new Pen(barvicka);
             // Cyklus a pro každý bodík kde kurzor => nakresli pixel do NOVÉHO obrázku
             for (int i = 0; i < cestaKurzoru.Count; i++)
             {
-                actualG.DrawRectangle(Pens.Black, cestaKurzoru[i].X, cestaKurzoru[i].Y, 1, 1);
+                actualG.DrawRectangle(pero, cestaKurzoru[i].X, cestaKurzoru[i].Y, 1, 1);
             }
             this.cestaKurzoru = cestaKurzoru;
         }
