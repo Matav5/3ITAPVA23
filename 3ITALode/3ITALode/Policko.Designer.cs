@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.Turquoise;
             Name = "Policko";
             Size = new Size(40, 40);
             MouseClick += Policko_MouseClick;

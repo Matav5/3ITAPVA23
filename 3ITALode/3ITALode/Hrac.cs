@@ -9,10 +9,11 @@ namespace _3ITALode
     public class Hrac
     {
         public string Prezdivka { get; private set; }
-        
+        public Policko[,] HerniPole { get; private set; }
         public Hrac(string Prezdivka)
         {
             this.Prezdivka = Prezdivka;
+            this.HerniPole = new Policko[10, 10];
         }
     }
 }

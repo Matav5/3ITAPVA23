@@ -16,7 +16,14 @@ namespace _3ITALode
         public int Y { get; private set; }
 
         //Loď na políčku
-        public Lod? Lod { get; private set; }
+        private Lod? lod;
+        public Lod? Lod { get => lod; set
+            {
+                lod = value;
+
+                BackColor = lod != null ? Color.White : Color.Turquoise;
+            }
+        }
         public bool JeStrelena { get; private set; }
 
         //Vlastník políčka
