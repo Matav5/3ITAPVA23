@@ -10,6 +10,8 @@ namespace _3ITALode
     {
         public string Prezdivka { get; private set; }
         public Policko[,] HerniPole { get; private set; }
+
+        public bool JeReadyNaBitvu => HerniPole.Cast<Policko>().Count((x) => x.Lod != null) >= 5;
         public Hrac(string Prezdivka)
         {
             this.Prezdivka = Prezdivka;

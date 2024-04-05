@@ -50,5 +50,9 @@ namespace _3ITALode
             if(OnPolickoKliknuto != null)
                 OnPolickoKliknuto.Invoke(this);
         }
+        public void SchovejLod()
+        {
+            BackColor = Color.Turquoise;
+        }
     }
 }

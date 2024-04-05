@@ -1,6 +1,6 @@
 
 using System.Numerics;
-
+using System.Linq;
 namespace _3ITALode
 {
     public partial class Form1 : Form
@@ -30,18 +30,21 @@ namespace _3ITALode
                     _nakliknutePolicko.BackColor = Color.Turquoise;
 
                 _nakliknutePolicko = value;
-                if(_nakliknutePolicko != null)
+                if (_nakliknutePolicko != null)
                     _nakliknutePolicko.BackColor = Color.Red;
             }
         }
         static List<int> lodeNaStavbu = new List<int>()
         {
-            2,
-            3,
-            3,
+            5,
             4,
-            5
+            3,
+            3,
+            2
         };
+
+        int indexAktualniLode = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -108,13 +111,16 @@ namespace _3ITALode
             }
 
             Point zacatekLode = new Point(nakliknutePolicko.X, nakliknutePolicko.Y);
-            for (int i = 0; i < 5; i++)
+
+            int aktualniLod = lodeNaStavbu[indexAktualniLode];
+
+            for (int i = 0; i < aktualniLod; i++)
             {
                 //Zjistím jestli se loï vejde
                 if (zacatekLode.X < 0 ||
-                    zacatekLode.X >= AktualniHrac.HerniPole.Length ||
+                    zacatekLode.X >= AktualniHrac.HerniPole.GetLength(1) ||
                     zacatekLode.Y < 0 ||
-                    zacatekLode.Y >= AktualniHrac.HerniPole.Length)
+                    zacatekLode.Y >= AktualniHrac.HerniPole.GetLength(0))
                 {
                     MessageBox.Show(" IT WONT FIT ");
                     return;
@@ -127,21 +133,38 @@ namespace _3ITALode
                     return;
                 }
                 zacatekLode.Offset(smerX, smerY);
-           //     MessageBox.Show(zacatekLode.ToString());
+                //     MessageBox.Show(zacatekLode.ToString());
             }
 
 
             //Položím loï
             zacatekLode = new Point(nakliknutePolicko.X, nakliknutePolicko.Y);
-            Lod lod = new Lod(5, new Vector2(smerX, smerY), zacatekLode.X, zacatekLode.Y, 0);
-            for (int i = 0; i < 5; i++)
+            Lod lod = new Lod(aktualniLod, new Vector2(smerX, smerY), zacatekLode.X, zacatekLode.Y, 0);
+            for (int i = 0; i < aktualniLod; i++)
             {
                 AktualniHrac.HerniPole[zacatekLode.Y, zacatekLode.X].Lod = lod;
                 zacatekLode.Offset(smerX, smerY);
             }
 
-
+            indexAktualniLode++;
             nakliknutePolicko = null;
+
+            if (indexAktualniLode >= lodeNaStavbu.Count)
+            {
+                foreach (Policko polecko in AktualniHrac.HerniPole)
+                {
+                    polecko.SchovejLod();
+                }
+                indexAktualniLode = 0;
+
+
+                if (hrac1.JeReadyNaBitvu && hrac2.JeReadyNaBitvu)
+                {
+                    MessageBox.Show("Jsou ready");
+                    SpustBitvu();
+                }
+                PrepniHrace();
+            }
 
 
             //Podmínky jestli políèko mùže být nakliknutelný
@@ -152,6 +175,16 @@ namespace _3ITALode
             //Støelba => Zmìna hráèù po konci kola
             //Kontrola sestøelených lodí => Checkování konce hry
 
+        }
+
+        private void SpustBitvu()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void PrepniHrace()
+        {
+            AktualniHrac = AktualniHrac == hrac1 ? hrac2 : hrac1;
         }
     }
 }
