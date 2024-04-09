@@ -12,6 +12,8 @@ namespace _3ITALode
         public Policko[,] HerniPole { get; private set; }
 
         public bool JeReadyNaBitvu => HerniPole.Cast<Policko>().Count((x) => x.Lod != null) >= 5;
+
+        public bool Prohral => HerniPole.Cast<Policko>().All((x) => x.Lod == null || x.Lod.JePotopena);
         public Label Label { get; private set; }
 
         public Hrac(string Prezdivka, Label label)

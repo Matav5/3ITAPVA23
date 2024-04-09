@@ -54,5 +54,19 @@ namespace _3ITALode
         {
             BackColor = Color.Turquoise;
         }
+
+        public bool Zasah()
+        {
+
+            if(Lod != null)
+            {
+                BackColor = Color.DarkRed;
+                JeStrelena = true;
+                Lod.Zasah();
+                return true;
+            }
+            BackColor = Color.Gray;
+            return false;
+        }
     }
 }

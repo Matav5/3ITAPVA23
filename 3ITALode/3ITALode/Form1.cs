@@ -48,6 +48,7 @@ namespace _3ITALode
 
         int indexAktualniLode = 0;
 
+        bool fazeStavby = true;
         public Form1()
         {
             InitializeComponent();
@@ -87,6 +88,51 @@ namespace _3ITALode
         }
         private void OnPolickoKliknuto(Policko policko)
         {
+        
+            if (fazeStavby) {
+                OnPolickoStavej(policko);
+            }
+            else
+            {
+                OnPolickoStrilej(policko);
+            }
+                //Podmínky jestli políèko mùže být nakliknutelný
+
+
+
+
+            //Støelba => Zmìna hráèù po konci kola
+            //Kontrola sestøelených lodí => Checkování konce hry
+
+        }
+
+        private void OnPolickoStrilej(Policko policko)
+        {
+           // MessageBox.Show(policko.ToString());
+            //Prevence sebestøelby
+            if (AktualniHrac == policko.Hrac)
+                return;
+
+
+
+            // Podmínka nestøílej na støelený políèko
+            if (policko.JeStrelena)
+                return;
+
+            if(!policko.Zasah())
+            {
+                PrepniHrace();
+            }
+            else
+            {
+                if(AktualniHrac.Prohral)
+                    MessageBox.Show("GG");
+            }
+        }
+
+        private void OnPolickoStavej(Policko policko)
+        {
+
             //Podmínky stavby / Podmínky støelby
             if (AktualniHrac != policko.Hrac || policko.Lod != null)
                 return;
@@ -171,19 +217,12 @@ namespace _3ITALode
             }
 
 
-            //Podmínky jestli políèko mùže být nakliknutelný
-
-
-
-
-            //Støelba => Zmìna hráèù po konci kola
-            //Kontrola sestøelených lodí => Checkování konce hry
-
         }
 
         private void SpustBitvu()
         {
-            throw new NotImplementedException();
+            //Už nestavíme => støílíme
+            fazeStavby = false;
         }
 
         private void PrepniHrace()

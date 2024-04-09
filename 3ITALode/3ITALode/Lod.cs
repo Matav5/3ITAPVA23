@@ -16,6 +16,7 @@ namespace _3ITALode
         public int X { get; private set; }
         public int Y { get; private set; }
         public int Zasahy { get; private set; }
+        public bool JePotopena => Zasahy >= Velikost;
 
         public Lod(int Velikost, Vector2 Smer, int X, int Y, int Zasahy)
         {
@@ -24,6 +25,10 @@ namespace _3ITALode
             this.X = X;
             this.Y = Y;
             this.Zasahy = Zasahy;
+        }
+        public void Zasah()
+        {
+            Zasahy++;
         }
 
     }
