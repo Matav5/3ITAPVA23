@@ -15,7 +15,10 @@ namespace _3ITALode
             get => aktualniHrac;
             set
             {
+                if(aktualniHrac != null)
+                    aktualniHrac.Label.ForeColor = Color.Black;
                 aktualniHrac = value;
+                aktualniHrac.Label.ForeColor = Color.Red;
                 //Vezme se hráè a vizuálnì se ukáže že hraje
             }
         }
@@ -55,11 +58,11 @@ namespace _3ITALode
         private void VytvorHru()
         {
             //Vytvoøení hráèù
-            hrac1 = new Hrac("Apep");
-            hrac2 = new Hrac("Limiøob");
+            hrac1 = new Hrac("Apep",label1);
+            hrac2 = new Hrac("Limiøob",label2);
 
-            //  AktualniHrac = Random.Shared.Next(0, 2) == 0 ? hrac1 : hrac2;
-            AktualniHrac = hrac1;
+              AktualniHrac = Random.Shared.Next(0, 2) == 0 ? hrac1 : hrac2;
+            //AktualniHrac = hrac1;
             //Vytvoøení políèek
             for (int i = 0; i < 10; i++)
             {
@@ -148,6 +151,7 @@ namespace _3ITALode
 
             indexAktualniLode++;
             nakliknutePolicko = null;
+            panel1.Refresh();
 
             if (indexAktualniLode >= lodeNaStavbu.Count)
             {
@@ -185,6 +189,22 @@ namespace _3ITALode
         private void PrepniHrace()
         {
             AktualniHrac = AktualniHrac == hrac1 ? hrac2 : hrac1;
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            int index = indexAktualniLode > 4 ? 0 : indexAktualniLode;
+            for (int i = 0; i < lodeNaStavbu[index]; i++)
+            {
+                e.Graphics.FillRectangle(Brushes.Black, i * 50, 0, 50, 50);
+                e.Graphics.DrawRectangle(Pens.Gray, i * 50, 0, 50, 50);
+            }
         }
     }
 }
