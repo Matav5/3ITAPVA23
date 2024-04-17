@@ -18,6 +18,9 @@ namespace _3ITALode
         public int Zasahy { get; private set; }
         public bool JePotopena => Zasahy >= Velikost;
 
+        public event Action<Lod> OnLodPotopena;
+
+
         public Lod(int Velikost, Vector2 Smer, int X, int Y, int Zasahy)
         {
             this.Velikost = Velikost;
@@ -29,6 +32,9 @@ namespace _3ITALode
         public void Zasah()
         {
             Zasahy++;
+            //Pokud je potopena... dá vědět ostatním
+            if (JePotopena)
+                OnLodPotopena?.Invoke(this);
         }
 
     }

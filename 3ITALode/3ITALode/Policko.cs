@@ -17,13 +17,20 @@ namespace _3ITALode
 
         //Loď na políčku
         private Lod? lod;
-        public Lod? Lod { get => lod; set
+        public Lod? Lod
+        {
+            get => lod;
+            set
             {
                 lod = value;
 
                 BackColor = lod != null ? Color.White : Color.Turquoise;
+
+                if(lod != null)
+                    lod.OnLodPotopena += Lod_OnLodPotopena;
             }
         }
+
         public bool JeStrelena { get; private set; }
 
         //Vlastník políčka
@@ -47,7 +54,7 @@ namespace _3ITALode
 
         private void Policko_MouseClick(object sender, MouseEventArgs e)
         {
-            if(OnPolickoKliknuto != null)
+            if (OnPolickoKliknuto != null)
                 OnPolickoKliknuto.Invoke(this);
         }
         public void SchovejLod()
@@ -58,7 +65,7 @@ namespace _3ITALode
         public bool Zasah()
         {
 
-            if(Lod != null)
+            if (Lod != null)
             {
                 BackColor = Color.DarkRed;
                 JeStrelena = true;
@@ -67,6 +74,10 @@ namespace _3ITALode
             }
             BackColor = Color.Gray;
             return false;
+        }
+        private void Lod_OnLodPotopena(Lod potopenaLod)
+        {
+            BackColor = Color.Red;
         }
     }
 }

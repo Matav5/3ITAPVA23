@@ -1,6 +1,7 @@
 
 using System.Numerics;
 using System.Linq;
+using System.Net.Sockets;
 namespace _3ITALode
 {
     public partial class Form1 : Form
@@ -22,6 +23,7 @@ namespace _3ITALode
                 //Vezme se hráè a vizuálnì se ukáže že hraje
             }
         }
+        public Hrac OponentHrac => aktualniHrac == hrac1 ? hrac2 : hrac1;
 
         private Policko _nakliknutePolicko;
         private Policko nakliknutePolicko
@@ -125,8 +127,11 @@ namespace _3ITALode
             }
             else
             {
-                if(AktualniHrac.Prohral)
-                    MessageBox.Show("GG");
+                if (OponentHrac.Prohral)
+                {
+                    MessageBox.Show("Vyhrál hráè " + AktualniHrac.Prezdivka, "Konec hry");
+                    Application.Restart();
+                }
             }
         }
 
@@ -223,6 +228,7 @@ namespace _3ITALode
         {
             //Už nestavíme => støílíme
             fazeStavby = false;
+            panel1.Hide();
         }
 
         private void PrepniHrace()
