@@ -55,14 +55,44 @@ namespace _3ITALode
         {
             InitializeComponent();
 
-            VytvorHru();
+            VytvorHru("Apep","Limiøob");
+        }
+        NetworkStream spojeni;
+
+        public Form1(string jmenoHrace1, string jmenoHrace2, NetworkStream spojeni)
+        {
+            InitializeComponent();
+            this.spojeni = spojeni;
+            VytvorHru(jmenoHrace1, jmenoHrace2);
+
+            ZacniCist();
+            //Využít spojení na získávání a odesílání tahù
+            //Úprava hry => neuvidím cizí pole a Force Click
+            PosliZpravu("Ahoj");
         }
 
-        private void VytvorHru()
+        private async void ZacniCist()
+        {
+            StreamReader sr = new StreamReader(spojeni);
+            while (true)
+            {
+
+                string zprava = await sr.ReadLineAsync();
+                MessageBox.Show(zprava);
+            }
+        }
+
+        private void PosliZpravu(string zprava)
+        {
+            StreamWriter sw = new StreamWriter(spojeni) { AutoFlush=true};
+            sw.WriteLine(zprava);
+        }
+
+        private void VytvorHru(string jmenoHrace1, string jmenoHrace2)
         {
             //Vytvoøení hráèù
-            hrac1 = new Hrac("Apep",label1);
-            hrac2 = new Hrac("Limiøob",label2);
+            hrac1 = new Hrac(jmenoHrace1, label1);
+            hrac2 = new Hrac(jmenoHrace2,label2);
 
               AktualniHrac = Random.Shared.Next(0, 2) == 0 ? hrac1 : hrac2;
             //AktualniHrac = hrac1;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("3ITALode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a667766645daa3c303c2717209a908696433f48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4b4304475ac7c431523c9e679eaad209289db5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("3ITALode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("3ITALode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
