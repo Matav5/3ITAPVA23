@@ -79,9 +79,37 @@ namespace _3ITALode
 
                 string zprava = await sr.ReadLineAsync();
                 MessageBox.Show(zprava);
+
+                ZpracujZpravu(zprava);
             }
         }
 
+        private void ZpracujZpravu(string? zprava)
+        {
+            // "UdelejNeco;par1;par2"
+            string[] rozdelenaZprava = zprava.Split(";");
+            switch (rozdelenaZprava[0])
+            {
+                case "Strelba":
+                    StrelbaOponenta();
+                    break;
+                case "Stavba":
+                    StavbaOponenta();
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        private void StrelbaOponenta(int Y, int X)
+        {
+
+        }
+        private void StavbaOponenta(int Y, int X, int Y2, int X2, int vel)
+        {
+
+        }
         private void PosliZpravu(string zprava)
         {
             StreamWriter sw = new StreamWriter(spojeni) { AutoFlush=true};
